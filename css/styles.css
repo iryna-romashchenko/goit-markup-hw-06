@@ -232,6 +232,76 @@ ul {
     padding: 15px;
     background: var(--primary-white-color);
 }
+.form{
+    min-width: 448px;
+    margin: 20px;
+}
+.form-field{
+position: relative;
+margin-bottom: 20px;
+}
+
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* background-color: #2196F3; */
+    transform: translateY(-250%);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-input{
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid var(--logo-text-color);
+}
+.person-icon {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    /* background-color: green; */
+}
+.phone-icon {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    /* background-color: green; */
+}
+
+.mail-icon{
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    /* background-color: green; */
+}
+
+.form-input:focus ~ .mail-icon{
+    border-color: blue;
+}
+.callback{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
 
 .close{
     position: fixed;
