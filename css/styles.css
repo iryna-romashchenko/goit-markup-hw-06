@@ -314,7 +314,8 @@ text-align: left;
    
 }
 
-.form-input:focus-within{
+.form-input:focus-within,
+.form-input:hover{
     border: 1px solid var(--accent-color);
 }
 
@@ -322,12 +323,13 @@ text-align: left;
     position: absolute;
     top: 25px;
     left: 8px;
+    transition: border 250ms var(--timing-function);
 }
 
-.form-field:focus-within .input-icon{
+.form-field:focus-within .input-icon,
+.form-field:hover .input-icon{
 fill: var(--accent-color);
 }
-
 
 .textarea-field {
     outline: none;
@@ -345,9 +347,17 @@ fill: var(--accent-color);
 
 }
 
-.textarea-field:focus {
+.textarea-field:focus,
+ .textarea-field:hover{
     border: 1px solid var(--accent-color);
 }
+
+.icon-check{
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-white-color);
+}
+
 .checkbox {
     display: block;
     position: relative;
@@ -379,7 +389,6 @@ fill: var(--accent-color);
     height: 15px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
-    fill: none;
     margin-right: 7px;
     cursor: pointer;
 }
